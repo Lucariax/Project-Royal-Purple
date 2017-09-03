@@ -1,17 +1,18 @@
 package gameSource;
 
 public class Pokemon {
-	private static int hitPoints, experience, attack, defense, specialAttack, specialDefense, speed, level, evolve, friendliness;
+	private static int hitPoints, experience, attack, defense, specialAttack, specialDefense, speed, level, evolve, friendliness, pokedex;
 	private static int evHitPoints, evAttack, evDefense, evSpecialAttack, evSpecialDefense, evSpeed, totalExperience, experienceCap;
 	private static String name, nickname, displayName;
 	private static double experienceModifier;
-	public Pokemon(String n, int h, int a, int d, int sA, int sD, int s, int evH, int evA, int evD, int evSA, int evSD, int evS, int l, int e, int f) {
+	public Pokemon(String n, int h, int a, int d, int sA, int sD, int s, int evH, int evA, int evD, int evSA, int evSD, int evS, int l, int e, int f, int pid) {
 		name = n;
 		nickname = n;
 		displayName = n;
 		level = l;
 		evolve = e;
 		friendliness = f;
+		pokedex = pid;
 		
 		hitPoints = h;
 		attack = a;
